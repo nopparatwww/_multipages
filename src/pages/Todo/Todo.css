@@ -7,3 +7,10 @@
 .todo-spacing{
     margin: 0 0.3rem;
 }
+
+.form-check{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+

@@ -39,6 +39,17 @@ function Navbar({ tab, setTab, products, carts, setToken }) {
         </button>
       </Link>
 
+      <Link to={"/ball"}>
+        <button
+          className={
+            "btn " + (tab === "ball" ? "btn-primary" : " btn-outline-primary")
+          }
+          onClick={() => setTab("ball")}
+        >
+          Ball
+        </button>
+      </Link>
+
       <Link to={"/todo"}>
         <button
           className={

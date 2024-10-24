@@ -14,6 +14,7 @@ import Components from "./pages/Components/Components.jsx";
 import Products from "./pages/Products/Products.jsx";
 import Carts from "./pages/Carts/Carts.jsx";
 import Login from "./pages/Login/Login.jsx";
+import Ball from "./pages/Ball/Ball.jsx";
 
 import { fetchProducts } from "./data/products.jsx";
 import "./App.css";
@@ -55,6 +56,7 @@ function App() {
             >
               <Route path={"/"} element={<Home />} />
               <Route path={"/home"} element={<Home />} />
+              <Route path={"/ball"} element={<Ball />} />
               <Route path={"/todo"} element={<Todo />} />
               <Route path={"/calculator"} element={<Calculator />} />
               <Route path={"/components/components"} element={<Components />} />
