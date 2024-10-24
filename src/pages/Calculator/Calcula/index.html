@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .result::-webkit-inner-spin-button,
+        .result::-webkit-outer-spin-button {
+            -webkit-appearance: none; /* ซ่อนที่เลื่อนตัวเลข */
+            margin: 0; /* ลบ margin */
+        }
+
+    </style>
+</head>
+<body >
+    <div id="container">
+        <div>
+            <b>Conter:</b><span id="counter">0</span>
+        </div>
+    </div>
+    <hr>
+    <table class="cal-model">
+        <tr>
+            <td colspan="4">
+                <input type="number" id="result" class="result" disabled >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="grey" onclick="clearInfo()">C</button>
+            </td>
+            <td>
+                <button class="grey" onclick="clearAll()">CA</button>
+            </td>
+            <td>
+                <button class="grey">%</button>
+            </td>
+            <td>
+                <button class="orange">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td><button class="dark-grey" onclick="numClick(7)">7</button></td>
+            <td><button class="dark-grey" onclick="numClick(8)">8</button></td>
+            <td><button class="dark-grey" onclick="numClick(9)">9</button></td>
+            <td><button class="orange">X</button></td>
+        </tr>
+        <tr>
+            <td><button class="dark-grey" onclick="numClick(4)">4</button></td>
+            <td><button class="dark-grey" onclick="numClick(5)">5</button></td>
+            <td><button class="dark-grey" onclick="numClick(6)">6</button></td>
+            <td><button class="orange" id="minus" onclick="subClick()">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="dark-grey" onclick="numClick(1)">1</button></td>
+            <td><button class="dark-grey" onclick="numClick(2)">2</button></td>
+            <td><button class="dark-grey" onclick="numClick(3)">3</button></td>
+            <td><button id="plus" onclick="plusClick()" class="orange">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="dark-grey">0</button></td>
+            <td><button class="dark-grey" >.</button></td>
+            <td><button class="orange" onclick="calClick()">=</button></td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
